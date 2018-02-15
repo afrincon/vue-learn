@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <Header></Header>
+    <HeaderBanner></HeaderBanner>
     <router-view/>
   </div>
 </template>
 
 <script>
-import Header from '@/components/Header.vue';
+import HeaderBanner from '@/components/HeaderSection.vue';
 
 export default {
   name: 'app',
-  components: { Header },
+  components: { HeaderBanner },
 };
 </script>
 

@@ -55,7 +55,7 @@
 import topNav from '@/components/Navigation.vue';
 
 export default {
-  name: 'header',
+  name: 'headerSection',
   components: { topNav },
 };
 </script>
