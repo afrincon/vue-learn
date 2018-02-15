@@ -12,12 +12,17 @@
     </router-link>
 
     <span class="navbar-item">
-    <a class="button is-primary is-inverted">
+    <a class="button is-primary is-inverted is-outlined">
       <span class="icon">
-        <i class="fab fa-github"></i>
       </span>
       <span>login</span>
     </a>
     </span>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'navigation',
+};
+</script>

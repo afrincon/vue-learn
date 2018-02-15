@@ -3,5 +3,5 @@
   "extends": [
     "plugin:vue/essential",
     "@vue/airbnb"
-  ]
+  ]  
 }

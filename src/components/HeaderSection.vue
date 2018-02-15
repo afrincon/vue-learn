@@ -6,15 +6,17 @@
         <div class="container">
           <div class="navbar-brand">
             <a class="navbar-item">
-              <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
+              AppLocal
             </a>
-            <span class="navbar-burger burger" data-target="navbarMenuHeroA">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span class="navbar-burger burger"
+                v-on:click="toggleNav" v-bind:class="{ 'is-active': isActive }">
+              <span></span>
+              <span></span>
+              <span></span>
             </span>
           </div>
-          <div id="navbarMenuHeroA" class="navbar-menu">
+          <div id="navbarMenuHeroA" class="navbar-menu"
+            v-bind:class="{ 'is-active': isActive }">
             <topNav></topNav>
           </div>
         </div>
@@ -57,5 +59,15 @@ import topNav from '@/components/Navigation.vue';
 export default {
   name: 'headerSection',
   components: { topNav },
+  data() {
+    return {
+      isActive: false,
+    };
+  },
+  methods: {
+    toggleNav() {
+      this.isActive = !this.isActive;
+    },
+  },
 };
 </script>

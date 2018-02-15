@@ -24,5 +24,5 @@ export default new Router({
       component: Contact,
     },
   ],
-  //linkActiveClass: 'is-active',
+  // linkActiveClass: 'is-active',
 });
